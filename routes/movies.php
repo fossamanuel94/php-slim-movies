@@ -5,6 +5,8 @@ use Slim\Factory\AppFactory;
 
 $app = AppFactory::create();
 
+header('Access-Control-Allow-Origin: *');
+
 
 //All Movies
 $app->get('/movies/all-movies', function (Request $request, Response $response){

@@ -8,6 +8,7 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../config/db.php';
 
 $app = AppFactory::create();
+header('Access-Control-Allow-Origin: *');
 
 
 //Include Movies
